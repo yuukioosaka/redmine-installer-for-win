@@ -1,7 +1,3 @@
-Of course. Here is a `README.md` file in English for the Redmine installer PowerShell script you provided.
-
----
-
 # Redmine Installer for Windows
 
 This PowerShell script automates the installation and configuration of Redmine 6.1.0 on a Windows environment. It handles the download, installation of all required dependencies, database setup, and registers Redmine as a Windows service for automatic startup.
