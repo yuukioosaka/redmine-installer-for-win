@@ -298,7 +298,7 @@ Write-Host ""
 Write-Host "Log in with the initial user/password." -ForegroundColor White
 Write-Host "  Username: admin" -ForegroundColor White
 Write-Host "  Password: admin" -ForegroundColor White
-Write-Host "  Å¶ Be sure to change your password after logging in." -ForegroundColor Yellow
+Write-Host "  Be sure to change your password after logging in." -ForegroundColor Yellow
 Write-Host ""
 Write-Host "Service Management:" -ForegroundColor Green
 Write-Host "  Start: Start-Service $ServiceName"
