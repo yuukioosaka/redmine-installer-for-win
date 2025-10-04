@@ -183,7 +183,7 @@ Write-Host "Created `Gemfile.local`." -ForegroundColor Green
 Write-Host "Installing Bundler..." -ForegroundColor Yellow
 gem install bundler
 Write-Host "Installing required Gems for Redmine... (This may take several minutes)" -ForegroundColor Yellow
-bundle config set --local without "test"
+bundle config set --local path "vendor/bundle"
 bundle install
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Failed to install Gems. Exiting script." -ForegroundColor Red
@@ -247,7 +247,7 @@ cd /d "$RedmineDir"
 bundle exec puma -e production -p $PumaPort
 "@
 
-Set-Content -Path $BatchFilePath -Value $BatchFileContent -Encoding UTF8
+Set-Content -Path $BatchFilePath -Value $BatchFileContent -Encoding Ascii
 Write-Host "Batch file created: $BatchFilePath" -ForegroundColor Green
 
 # Register the service using nssm
